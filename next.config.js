@@ -7,8 +7,8 @@ module.exports = {
       ],
    },
    env: {
-      BASE_URL: "http://localhost:3000",
-      // BASE_URL: "https://elearn-ivory.vercel.app",
+      //BASE_URL: "http://localhost:3000",
+      BASE_URL: "https://elearn-ivory.vercel.app",
       // BASE_URL: "https://learn-next-inky.vercel.app",
       MONGODB_URL:
          "mongodb+srv://jaseem:jarvis007@cluster0.hj8dk.mongodb.net/elearn?retryWrites=true&w=majority",
