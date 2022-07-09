@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+   width: 6px;
+   height: 6px;
+}
+
+::-webkit-scrollbar-track {
+   border-radius: 100vh;
+   background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #ecc94b;
+   border-radius: 100vh;
+   border: 3px solid #ecc94b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #ecc94b;
+}
+
+@layer components {
+   .link {
+      @apply cursor-pointer hover:text-gray-300;
+   }
+   .link1 {
+      @apply cursor-pointer text-yellow-300 focus:text-yellow-300;
+   }
+   .input1 {
+      @apply appearance-none block w-full bg-gray-700 text-white border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-600 focus:border-yellow-400;
+   }
+   .input2 {
+      @apply appearance-none block bg-gray-700 text-white border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-gray-600 focus:border-yellow-400;
+   }
+   .label1 {
+      @apply block uppercase tracking-wide text-yellow-400 text-xs font-bold my-2;
+   }
+   .button {
+      @apply p-2 text-white font-bold outline-none md:text-sm bg-gradient-to-b from-yellow-400 to-yellow-500 border border-yellow-500 rounded-sm focus:outline-none focus:ring-2 focus:ring-yellow-400;
+   }
+   .button1 {
+      @apply p-2 text-white font-bold outline-none md:text-sm bg-gradient-to-b from-red-500 to-red-600 border border-red-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-red-500;
+   }
+   .image {
+      @apply transform rounded-md transition-transform duration-500 hover:scale-125;
+   }
+   .list {
+      @apply text-black text-left text-sm  w-auto bg-transparent cursor-pointer hover:bg-gray-200 py-2 px-2 block ;
+   }
+   .unordered {
+      @apply dropdown-menu w-24 md:w-28 bg-white rounded-md right-0 absolute hidden cursor-pointer;
+   }
+}
+.dropdown:hover .dropdown-menu {
+   display: block;
+   outline: none;
+}
+* {
+   --tw-bg-opacity: 1;
+   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}
